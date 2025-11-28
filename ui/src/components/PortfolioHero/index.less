@@ -1,0 +1,57 @@
+.portfolio-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 64px;
+
+  .hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    width: 100%;
+  }
+
+  .hero-tag {
+    margin-bottom: 16px;
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+    margin: 16px 0;
+    line-height: 1.1;
+  }
+
+  .hero-paragraph {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 32px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 16px;
+
+    .ant-btn {
+      height: 48px;
+      padding: 0 32px;
+    }
+  }
+
+  .hero-svg-container {
+    text-align: center;
+  }
+
+  .hero-svg {
+    max-width: 400px;
+    filter: drop-shadow(0 0 20px rgba(0, 243, 255, 0.3));
+  }
+  
+  .hero-svg-gradient stop {
+    stop-color: #00f3ff;
+    stop-opacity: 0.2;
+  }
+
+  .hero-svg-gradient stop[offset="100%"] {
+    stop-color: #bc13fe;
+  }
+}

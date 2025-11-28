@@ -1,0 +1,97 @@
+//
+// Estilos para o PortfolioContainer
+//
+
+// --- Variáveis ---
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Roboto:wght@300;400;700&display=swap');
+
+@neon-cyan: #00f3ff;
+@neon-purple: #bc13fe;
+@dark-bg: #050505;
+@light-dark-bg: #0a0a0a;
+@card-bg: #111;
+@border-color: #333;
+@text-color: #fff;
+@text-secondary: #888;
+@text-tertiary: #aaa;
+
+@font-main: 'Orbitron', sans-serif;
+@font-body: 'Roboto', sans-serif;
+
+// --- Estilos Globais (com cuidado) ---
+body {
+  background-color: @dark-bg;
+  font-family: @font-body;
+}
+
+// Sobrescrita de fontes do Antd para o tema do portfólio
+h1, h2, h3, h4, .ant-typography, .brand-font {
+  font-family: @font-main !important;
+}
+
+p, .ant-typography p, .ant-form-item-label {
+  font-family: @font-body !important;
+}
+
+// --- Classes Utilitárias ---
+.gradient-text {
+  background: linear-gradient(90deg, @neon-cyan, @neon-purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 20px fade(@neon-cyan, 30%);
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+// --- Componentes Específicos ---
+
+// Navbar
+.glass-nav {
+  background: fade(@dark-bg, 80%) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid fade(@text-color, 10%);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s;
+
+  &.nav-transparent {
+    background: transparent !important;
+    border-bottom-color: transparent;
+  }
+}
+
+// Cards
+.tech-card {
+  background: @card-bg !important;
+  border: 1px solid @border-color;
+  transition: all 0.3s;
+
+  &:hover {
+    border-color: @neon-cyan;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px -10px fade(@neon-cyan, 20%);
+  }
+}
+
+// Formulário
+.ant-input, .ant-input-textarea {
+  background: fade(@text-color, 5%) !important;
+  border-color: @border-color !important;
+  color: @text-color !important;
+
+  &:focus, &:hover {
+    border-color: @neon-cyan !important;
+    box-shadow: 0 0 10px fade(@neon-cyan, 20%) !important;
+  }
+}
+
+// --- Animações ---
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}

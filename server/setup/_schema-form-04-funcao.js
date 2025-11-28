@@ -1,0 +1,60 @@
+/**
+  *
+  *  CODE GENERATED AUTOMATICALLY
+  *
+  *  THIS FILE SHOULD NOT BE EDITED BY HAND
+  *
+  */
+
+_form.createIfNotExists(
+	_val.map()
+	.set("big", false)
+	.set("control_active", true)
+	.set("control_group", false)
+	.set("control_user", false)
+	.set("description", "")
+	.set("export_id", false)
+	.set("export_json", true)
+	.set("export_lastchange", false)
+	.set("export_uid", true)
+	.set("export_xls", true)
+	.set("export_xml", true)
+	.set("firebase", "")
+	.set("name", "funcao")
+	.set("reorder", 0)
+	.set("report", false)
+	.set("show_id", true)
+	.set("title", "Fun\u00E7\u00F5es")
+	.set("uid", "243b8207-a3c6-4c3a-84c2-658fbc6d5e75")
+)
+_form.createComponentIfNotExists(
+	"243b8207-a3c6-4c3a-84c2-658fbc6d5e75",
+	_val.map()
+	.set("colspan", 0)
+	.set("description", "")
+	.set("firebase", "")
+	.set("group_id", 0)
+	.set("height", 0)
+	.set("mandatory", false)
+	.set("max", 0)
+	.set("min", 0)
+	.set("name", "funcao_id")
+	.set("properties", "{\"MASK\":{\"default\":\"\",\"type\":\"STRING\",\"value\":\"\"},\"MASK_REVERSE\":{\"default\":\"false\",\"type\":\"BOOLEAN\",\"value\":\"false\"},\"MASK_SELECTONFOCUS\":{\"default\":\"false\",\"type\":\"BOOLEAN\",\"value\":\"false\"}}")
+	.set("rowspan", 0)
+	.set("tdheight", 0)
+	.set("tdwidth", 0)
+	.set("title", "Fun\u00E7\u00F5es")
+	.set("type", "text")
+	.set("uid", "cce4e0bd-be40-41a7-b224-51c8d188c979")
+	.set("unique", false)
+	.set("user_id", 0)
+	.set("whenedit", true)
+	.set("whenexport", true)
+	.set("whenfilter", true)
+	.set("whennew", true)
+	.set("whenresult", true)
+	.set("whenview", true)
+	.set("width", 0)
+	.set("x", 1)
+	.set("y", 1)
+)
