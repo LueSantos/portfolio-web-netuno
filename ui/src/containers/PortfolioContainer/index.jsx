@@ -7,8 +7,8 @@ import { skills, projects, stats } from './data.js';
 
 // Componentes Filhos
 import PortfolioHeader from '../../components/PortfolioHeader';
-import PortfolioHero from '../../components/PortfolioHero/index.jsx';
-import PortfolioAbout from '../../components/PortfolioAbout/index.jsx';
+import PortfolioHero from '../../components/PortfolioHero';
+import PortfolioAbout from '../../components/PortfolioAbout';
 import PortfolioProjects from '../../components/PortfolioProjects';
 import PortfolioContact from '../../components/PortfolioContact';
 import PortfolioFooter from '../../components/PortfolioFooter';
@@ -49,9 +49,9 @@ const Portfolio = () => {
         },
       }}
     >
-      <Layout style={{ minHeight: '100vh', background: '#050505' }}>
-        
-        <PortfolioHeader 
+      <Layout className="portfolio-layout">
+
+        <PortfolioHeader
           scrolled={scrolled}
           onScrollTo={scrollTo}
           onMenuOpen={() => setMobileMenuOpen(true)}
@@ -66,14 +66,14 @@ const Portfolio = () => {
 
         <PortfolioFooter />
 
-        <PortfolioMobileMenu 
+        <PortfolioMobileMenu
           isOpen={mobileMenuOpen}
           onClose={() => setMobileMenuOpen(false)}
           onScrollTo={scrollTo}
         />
 
         <FloatButton.BackTop />
-        
+
       </Layout>
     </ConfigProvider>
   );

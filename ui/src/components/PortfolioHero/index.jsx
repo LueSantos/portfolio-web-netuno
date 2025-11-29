@@ -11,9 +11,9 @@ const PortfolioHero = ({ onScrollTo }) => {
       <div className="hero-container">
         <Row gutter={[48, 48]} align="middle">
           <Col xs={24} md={12}>
-            <Tag color="cyan" className="hero-tag">DESENVOLVEDOR FRONTEND</Tag>
+            <Tag color="cyan" className="hero-tag">DESENVOLVEDORA FRONTEND</Tag>
             <Title level={1} className="hero-title">
-              CRIANDO O <br/><span className="gradient-text">FUTURO DIGITAL</span>
+              CRIANDO O <br /><span className="gradient-text">FUTURO DIGITAL</span>
             </Title>
             <Paragraph className="hero-paragraph">
               Interfaces React de alta performance com a robustez do Ant Design e a agilidade do Netuno.
@@ -22,7 +22,7 @@ const PortfolioHero = ({ onScrollTo }) => {
               <Button type="primary" size="large" icon={<Rocket size={16} />} onClick={() => onScrollTo('projetos')}>
                 VER PROJETOS
               </Button>
-              <Button size="large" ghost onClick={() => onScrollTo('contato')}>
+              <Button size="large" onClick={() => onScrollTo('contato')}>
                 FALE COMIGO
               </Button>
             </div>
@@ -30,7 +30,7 @@ const PortfolioHero = ({ onScrollTo }) => {
           <Col xs={24} md={12} className="hero-svg-container">
             <div className="animate-float">
               <svg viewBox="0 0 400 400" width="100%" className="hero-svg">
-                 <defs>
+                <defs>
                   <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
                     <stop offset="0%" className="hero-svg-gradient" />
                     <stop offset="100%" className="hero-svg-gradient" />

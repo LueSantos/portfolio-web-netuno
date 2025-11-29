@@ -1,0 +1,63 @@
+.portfolio-header {
+  &.ant-layout-header {
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &.glass-nav {
+      /* Add glassmorphism styles here if needed, or keep existing class logic */
+    }
+    
+    &.nav-transparent {
+      background: transparent;
+    }
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    
+    .logo-text {
+      font-size: 20px;
+      color: #fff;
+      letter-spacing: 2px;
+      
+      .highlight {
+        color: #00f3ff;
+      }
+    }
+  }
+
+  .desktop-menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    .menu-item {
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      
+      &:hover {
+        color: #00f3ff;
+      }
+    }
+  }
+
+  .mobile-trigger {
+    display: none;
+    
+    @media (max-width: 768px) {
+      display: flex;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .desktop-menu {
+      display: none;
+    }
+  }
+}

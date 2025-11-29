@@ -1,11 +1,12 @@
 import React from 'react';
 import { Layout } from 'antd';
+import './index.less';
 
 const { Footer: AntFooter } = Layout;
 
 const PortfolioFooter = () => {
   return (
-    <AntFooter style={{ textAlign: 'center', background: '#000', color: '#444', borderTop: '1px solid #222' }}>
+    <AntFooter className="portfolio-footer">
       Zaya Netunis ©2025 | Powered by Ant Design & Netuno
     </AntFooter>
   );
