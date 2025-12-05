@@ -23,8 +23,8 @@ if (dashboardContainer) {
     <ConfigProvider
       theme={{
         token: {
-          colorPrimary: '#5b5ce1',
-          colorLink: '#5b5ce1',
+          colorPrimary: '#34670aff',
+          colorLink: '#34670aff',
           borderRadius: 5,
         },
         algorithm: theme.darkAlgorithm
